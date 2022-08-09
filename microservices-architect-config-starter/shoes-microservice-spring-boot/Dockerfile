@@ -1,5 +1,5 @@
 #we are building mutistage docker file here
-FROM maven as build
+FROM maven:3.6.0-jdk-11-slim AS build
 MAINTAINER dharma
 WORKDIR /app
 COPy . .
